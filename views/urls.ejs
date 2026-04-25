@@ -1,0 +1,52 @@
+<% layout("layouts/boilerplate") %>
+
+
+<h2 class=" hdd text-center mb-4 ">shortened Urls</h2>
+
+<div class="container">
+  <table class="table table-hover table-bordered text-center">
+
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Short URL</th>
+        <th>Original URL</th>
+        <th>Clicks</th>
+        
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% urls.forEach((url, index) => { %>
+        <tr>
+          <td><%= index + 1 %></td>
+
+          <td>
+            <a href="/app/<%= url.shortCode %>" target="_blank">
+              <%= url.shortCode %>
+            </a>
+          </td>
+
+          <td style="max-width:200px; overflow:hidden; text-overflow:ellipsis;">
+            <%= url.originalUrl %>
+          </td>
+
+          <td><%= url.clicks %></td>
+
+
+          <td>
+            <form action="/app/urls/<%= url._id %>?_method=DELETE" method="POST">
+              <button class="btn btn-danger btn-sm">
+                🗑 Delete
+              </button>
+              
+            </form>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+
+  </table>
+</div>
+

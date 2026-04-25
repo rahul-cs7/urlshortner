@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnapURL — Shorten. Share. Track.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/landing.css">
+  
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="/" class="nav-logo">🚀 Brevio</a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="/app" class="btn-nav">Launch App →</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Now with QR Code generation
+        </div>
+        <h1 class="hero-title">
+          Long URLs<br/>
+          deserve a<br/>
+          <span class="line-glow">shorter life.</span>
+        </h1>
+        <p class="hero-sub">
+          Paste your link, get an instant short URL with a QR code, custom slug, and click analytics — all in one clean dashboard.
+        </p>
+        <div class="hero-ctas">
+          <a href="/app" class="btn-primary">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M13 5l7 7-7 7M5 12h14" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Shorten a URL
+          </a>
+          <a href="#features" class="btn-secondary">See features</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="url-card">
+          <div class="url-card-label">Original URL</div>
+          <div class="url-input-mock">https://www.example.com/some/very/long/path/that/nobody-wants-to-share/2024</div>
+          <div class="url-card-label">Your short link</div>
+          <div class="url-result">
+            <span>snapurl.app/x9k2p</span>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <div class="stats-row">
+            <div class="stat-chip">
+              <span class="num">847</span>
+              <span class="lbl">Clicks</span>
+            </div>
+            <div class="stat-chip">
+              <span class="num">12</span>
+              <span class="lbl">Countries</span>
+            </div>
+            <div class="stat-chip">
+              <span class="num">QR</span>
+              <span class="lbl">Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ── -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-head">
+      <div class="section-label">What you get</div>
+      <h2 class="section-title">Everything you need.<br/>Nothing you don't.</h2>
+      <p class="section-sub">Built for speed and simplicity — no accounts, no setup, just shorten and go.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feat-card" data-delay="0">
+        <div class="feat-icon cyan">🔗</div>
+        <h3>Instant URL Shortening</h3>
+        <p>Paste any URL — no matter how long — and get a clean, shareable short link in under a second. Powered by shortid under the hood.</p>
+      </div>
+
+      <div class="feat-card purple-accent" data-delay="100">
+        <div class="feat-icon purple">✏️</div>
+        <h3>Custom Slugs</h3>
+        <p>Brand your links with a memorable custom code. Instead of random characters, use something meaningful like <code style="color:var(--purple);background:var(--purple-dim);padding:1px 5px;border-radius:4px;">/my-product</code>.</p>
+      </div>
+
+      <div class="feat-card purple-accent" data-delay="200">
+        <div class="feat-icon purple">📱</div>
+        <h3>QR Code Generation</h3>
+        <p>Every short URL gets an auto-generated QR code, ready to embed in presentations, print materials, or share on social media instantly.</p>
+      </div>
+
+      <div class="feat-card" data-delay="300">
+        <div class="feat-icon cyan">📊</div>
+        <h3>Click Analytics</h3>
+        <p>Track exactly how many times your short link has been clicked. Watch your numbers grow in real time with a live counter on every URL.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="how-inner">
+      <div>
+        <div class="section-label">How it works</div>
+        <h2 class="section-title">Three steps to a shareable link.</h2>
+        <p class="section-sub" style="margin-bottom:2.5rem;">The simplest URL shortener workflow you'll ever use.</p>
+        <div class="steps">
+          <div class="step active">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h4>Paste your long URL</h4>
+              <p>Drop any URL into the input field — any length, any domain, any path.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h4>Choose a slug or go random</h4>
+              <p>Optionally type a custom code. Leave it blank for an auto-generated shortid.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h4>Share your link + QR code</h4>
+              <p>Copy the short URL or scan the QR code. Track clicks from your dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="term-dot red"></span>
+          <span class="term-dot amber"></span>
+          <span class="term-dot green"></span>
+          <span style="margin-left:0.5rem;font-size:0.75rem;color:var(--muted);font-family:monospace;">POST /app/shorten</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">body.originalUrl</span></div>
+          <div class="t-dim">https://example.com/very/long/path</div>
+          <br/>
+          <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">body.customCode</span></div>
+          <div class="t-dim">my-demo  <span style="color:var(--muted)">(optional)</span></div>
+          <br/>
+          <div class="t-out">✔ Short code reserved</div>
+          <div class="t-out">✔ MongoDB document saved</div>
+          <div class="t-out">✔ QR code generated</div>
+          <br/>
+          <div class="t-line"><span class="t-prompt">→</span><span class="t-cmd"> shortUrl</span></div>
+          <div class="t-url">  http://localhost:3000/app/my-demo</div>
+          <br/>
+          <div class="t-line"><span class="t-prompt">$</span><span class="t-cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS BANNER ── -->
+<div class="stats-banner">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-block">
+        <span class="big-num">∞</span>
+        <span class="big-label">URLs you can shorten</span>
+      </div>
+      <div class="stat-block">
+        <span class="big-num">0ms</span>
+        <span class="big-label">Extra redirect latency</span>
+      </div>
+      <div class="stat-block">
+        <span class="big-num">100%</span>
+        <span class="big-label">Open source &amp; yours</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── CTA ── -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="section-label" style="text-align:center;">Ready to try it?</div>
+    <h2>Stop sharing ugly links.</h2>
+    <p>Launch the app and shorten your first URL in under 10 seconds.</p>
+    <a href="/app" class="btn-primary" style="font-size:1rem;padding:1rem 2.5rem;">
+      Open the App
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M13 5l7 7-7 7M5 12h14" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="container">
+  <span class="footer-logo">🚀 Brevio</span>
+  <span>Built with Express · MongoDB · EJS</span>
+  <span>Made with ♥ for the web</span>
+</footer>
+
+<!-- ── SCRIPTS ── -->
+<script>
+  /* ── PARTICLE CANVAS ── */
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [];
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); initParticles(); });
+
+  function initParticles() {
+    particles = [];
+    const count = Math.floor((W * H) / 14000);
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        r: Math.random() * 1.5 + 0.5,
+        alpha: Math.random() * 0.5 + 0.1,
+        hue: Math.random() > 0.5 ? 190 : 270
+      });
+    }
+  }
+  initParticles();
+
+  function drawGrid() {
+    ctx.strokeStyle = 'rgba(0,212,255,0.03)';
+    ctx.lineWidth = 0.5;
+    const gs = 80;
+    for (let x = 0; x < W; x += gs) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let y = 0; y < H; y += gs) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+  }
+
+  function loop() {
+    ctx.clearRect(0, 0, W, H);
+    drawGrid();
+    particles.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = W;
+      if (p.x > W) p.x = 0;
+      if (p.y < 0) p.y = H;
+      if (p.y > H) p.y = 0;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `hsla(${p.hue}, 100%, 70%, ${p.alpha})`;
+      ctx.fill();
+    });
+
+    /* connect close particles */
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (d < 100) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = `rgba(0,212,255,${0.06 * (1 - d/100)})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(loop);
+  }
+  loop();
+
+  /* ── SCROLL REVEAL ── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        const delay = e.target.dataset.delay || 0;
+        setTimeout(() => e.target.classList.add('visible'), +delay);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.feat-card').forEach(el => observer.observe(el));
+
+  /* ── STEP HOVER ── */
+  document.querySelectorAll('.step').forEach(step => {
+    step.addEventListener('mouseenter', () => {
+      document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+      step.classList.add('active');
+    });
+  });
+
+  /* ── COPY BUTTON ── */
+  document.querySelector('.copy-btn').addEventListener('click', function() {
+    this.textContent = 'Copied!';
+    setTimeout(() => this.textContent = 'Copy', 1800);
+  });
+
+  /* ── COUNTER ANIMATION ── */
+  function animateCount(el, target, suffix='') {
+    let cur = 0;
+    const inc = target / 60;
+    const tick = () => {
+      cur = Math.min(cur + inc, target);
+      el.textContent = Math.floor(cur).toLocaleString() + suffix;
+      if (cur < target) requestAnimationFrame(tick);
+    };
+    tick();
+  }
+
+  const statsObserver = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      statsObserver.disconnect();
+    }
+  }, { threshold: 0.5 });
+
+  const statBanner = document.querySelector('.stats-banner');
+  if (statBanner) statsObserver.observe(statBanner);
+</script>
+
+</body>
+</html>
